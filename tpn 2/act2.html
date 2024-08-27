@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>actividad 2</title>
+</head>
+<!--Crear un arreglo que permita cargar 15 números y los ordene de menor a mayor.-->
+
+<body>
+    <script>
+
+        let numeros = [];
+
+        for (let i = 0; i < 15; i++) {
+            let numero = parseFloat(prompt("Ingrese el número:"));
+            numeros.push(numero);
+        }
+
+        numeros.sort((a, b) => a - b) 
+    
+
+        document.write("Lista de números ordenada de menor a mayor:" + numeros.join(', '));
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

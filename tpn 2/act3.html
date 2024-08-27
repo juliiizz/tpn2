@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>actividad 3</title>
+</head>
+<!--Crear un arreglo que permita cargar 10 números en forma aleatoria y los ordene
+de menor a mayor.-->
+
+<body>
+    <script>
+        var arregloNumero = []
+
+        for (let i = 0; i < 10; i++) {
+            arregloNumero[i] = Math.floor(Math.random() * 10)
+            arregloNumero.sort((a, b) => a - b)
+        }
+        document.write(arregloNumero.join(', '))
+
+    </script>
+
+</body>
+
+</html>
